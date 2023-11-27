@@ -1,0 +1,21 @@
+﻿  DXUTcamera.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  DXUTgui.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  DXUTguiIME.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  DXUTres.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  DXUTsettingsdlg.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  ImeUi.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  SDKmesh.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  SDKmisc.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  SDKsound.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  SDKwavefile.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  Generating Code...

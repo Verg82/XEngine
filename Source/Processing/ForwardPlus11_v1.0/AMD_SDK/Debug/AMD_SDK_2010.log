@@ -1,0 +1,20 @@
+﻿cl : Command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored
+  Geometry.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\amd_sdk\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  HelperFunctions.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\amd_sdk\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  HUD.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\amd_sdk\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  LineRender.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\amd_sdk\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  Magnify.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\amd_sdk\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  MagnifyTool.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\amd_sdk\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  ShaderCache.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\amd_sdk\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  Sprite.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\amd_sdk\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  Timer.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\amd_sdk\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  Generating Code...

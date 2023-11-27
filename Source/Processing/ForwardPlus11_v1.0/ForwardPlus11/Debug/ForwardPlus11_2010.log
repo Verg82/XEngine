@@ -1,0 +1,6 @@
+﻿cl : Command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored
+  ForwardPlus11.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\forwardplus11\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  ForwardPlusUtil.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\forwardplus11\..\\DXUT\\Core\\DXUT.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  Generating Code...

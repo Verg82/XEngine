@@ -1,0 +1,170 @@
+object FRM_XGUI: TFRM_XGUI
+  Left = 211
+  Top = 153
+  Width = 818
+  Height = 566
+  Caption = 'XEngine Debugger (Demo Mode) DX11'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Pnl_Output: TPanel
+    Left = 0
+    Top = 0
+    Width = 802
+    Height = 507
+    Align = alClient
+    BevelOuter = bvNone
+    Color = 5325372
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Pnl_Status: TPanel
+    Left = 0
+    Top = 507
+    Width = 802
+    Height = 21
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 5460819
+    TabOrder = 1
+    DesignSize = (
+      802
+      21)
+    object Img_Status: TImage
+      Left = 0
+      Top = 0
+      Width = 802
+      Height = 21
+      Align = alClient
+      Picture.Data = {
+        07544269746D61709A000000424D9A0000000000000036000000280000000100
+        0000190000000100180000000000640000000000000000000000000000000000
+        0000D0B5AA007D554400765042006F4B3E0068463A00614236005A3D33005339
+        2F004C352C00453028003E2B25003727210030221D00291D1900221817001B14
+        130050413B0056453E005B484200614B4400664F48006B534B0071564D00775A
+        51007C5D5400}
+      Stretch = True
+    end
+    object Lbl_Copyright: TLabel
+      Left = 5
+      Top = 3
+      Width = 225
+      Height = 14
+      Caption = '(C) DDD Digital Dreams Development Inc., 2015'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Img_BottomSizer: TImage
+      Left = 789
+      Top = 8
+      Width = 11
+      Height = 11
+      Anchors = [akRight, akBottom]
+      Picture.Data = {
+        07544269746D6170C2010000424DC20100000000000036000000280000000B00
+        00000B00000001001800000000008C0100000000000000000000000000000000
+        000000F2FFFFFFFFFFFFFF00F2FF00F2FFFFFFFFFFFFFF00F2FF00F2FFFFFFFF
+        FFFFFF0000007C70667C7066FFFFFF00F2FF7C70667C7066FFFFFF00F2FF7C70
+        667C7066FFFFFF0000007C70667C706600F2FF00F2FF7C70667C706600F2FF00
+        F2FF7C70667C706600F2FF00000000F2FF00F2FF00F2FF00F2FF00F2FF00F2FF
+        00F2FF00F2FF00F2FF00F2FF00F2FF00000000F2FF00F2FF00F2FF00F2FF00F2
+        FFFFFFFFFFFFFF00F2FF00F2FFFFFFFFFFFFFF00000000F2FF00F2FF00F2FF00
+        F2FF7C70667C7066FFFFFF00F2FF7C70667C7066FFFFFF00000000F2FF00F2FF
+        00F2FF00F2FF7C70667C706600F2FF00F2FF7C70667C706600F2FF00000000F2
+        FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00
+        000000F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FFFFFFFF
+        FFFFFF00000000F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF7C70
+        667C7066FFFFFF00000000F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00F2FF00
+        F2FF7C70667C706600F2FF000000}
+      Transparent = True
+    end
+    object Img_Split01: TImage
+      Left = 238
+      Top = 2
+      Width = 2
+      Height = 16
+      Picture.Data = {
+        07544269746D6170E6000000424DE60000000000000036000000280000000200
+        0000160000000100180000000000B00000000000000000000000000000000000
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000}
+    end
+    object Lbl_CurrMode: TLabel
+      Left = 249
+      Top = 3
+      Width = 46
+      Height = 14
+      Caption = 'Stopped..'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Img_Split02: TImage
+      Left = 398
+      Top = 2
+      Width = 2
+      Height = 16
+      Picture.Data = {
+        07544269746D6170E6000000424DE60000000000000036000000280000000200
+        0000160000000100180000000000B00000000000000000000000000000000000
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD0000A49991E3E0DD
+        0000A49991E3E0DD0000A49991E3E0DD0000}
+    end
+    object Lbl_Version: TLabel
+      Left = 698
+      Top = 3
+      Width = 76
+      Height = 14
+      Anchors = [akRight]
+      Caption = 'Version: 2.0.0.1'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Button1: TButton
+      Left = 640
+      Top = 2
+      Width = 51
+      Height = 17
+      Caption = 'Set'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+  end
+end

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{0b963c88-fbcf-4bfa-b697-93609a6cfa14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{d6de36f8-93ac-4e67-9507-ba02df956ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{0acccc91-9da8-42ca-9e6d-21b29ea7be85}</UniqueIdentifier>
+      <Extensions>hlsl;</Extensions>
+    </Filter>
+    <Filter Include="Effects">
+      <UniqueIdentifier>{d2d2457a-b720-42da-94d4-c722fcd626fe}</UniqueIdentifier>
+      <Extensions>fx;fxh;</Extensions>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{07407734-fd14-4d80-8851-4de0c77494f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lighting">
+      <UniqueIdentifier>{05a7755d-1a6b-445a-8ec4-07c94ad3a746}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\XEngine 2.0\System\XEngine.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\System\XSystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\System\XMethods.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\Geometry\XSkyBox.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\Input\XCamera.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\System\XFps.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\System\XFont.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\System\XTextRender.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\Lighting\XForwardPlus.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\Geometry\XSkyPlane.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\XEngine 2.0\Geometry\XSkyMap.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\XEngine 2.0\System\XEngine.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XEngine 2.0\System\XMethods.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XEngine 2.0\Geometry\XSkyBox.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XEngine 2.0\Input\XCamera.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XEngine 2.0\System\XFps.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XEngine 2.0\System\XFont.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XEngine 2.0\System\XTextRender.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XEngine 2.0\Lighting\XForwardPlus.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XEngine 2.0\Geometry\XSkyPlane.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\XEngine 2.0\Geometry\XSkyMap.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\XEngine 2.0\Effects\SkyMap.fx">
+      <Filter>Effects</Filter>
+    </None>
+    <None Include="..\XEngine 2.0\Shaders\SkyBox.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Release\Effects\Font.fx">
+      <Filter>Effects</Filter>
+    </None>
+    <None Include="..\Release\Effects\SkyPlane.fx">
+      <Filter>Effects</Filter>
+    </None>
+  </ItemGroup>
+</Project>

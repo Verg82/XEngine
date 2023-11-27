@@ -1,0 +1,9 @@
+﻿  DXUT.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  DXUTDevice11.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  DXUTDevice9.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  DXUTmisc.cpp
+e:\xengine\source\processing\forwardplus11_v1.0\dxut\core\dxut.h(16): fatal error C1189: #error :  The installed DXSDK is out of date.
+  Generating Code...

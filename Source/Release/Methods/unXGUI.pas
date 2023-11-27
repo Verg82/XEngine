@@ -1,0 +1,108 @@
+{*******************************************************************************
+// It's An Unofficial Version XEngine v.2.0.0.1
+// unXGUI.pas
+// It's A XEngine GUI Form.
+// Programming By: Max Tantser (Verg)
+// Date Creation: 22 April 2014
+// Last Changing: 23 May 2014
+// Author Rights By: Native Soft Technology And Lucky's Flash Studio Inc.,
+// Licensed By: (C)DDD Digital Dreams Development Inc., 2014
+*******************************************************************************}
+unit unXGUI;
+interface uses
+  Windows,Messages,Classes,Graphics,Controls,Forms,XRenderClass,ComCtrls,
+  ExtCtrls,StdCtrls;
+
+type
+  TFRM_XGUI = class(TForm)
+    Pnl_Output: TPanel;
+    Pnl_Status: TPanel;
+    Img_Status: TImage;
+    Lbl_Copyright: TLabel;
+    Img_BottomSizer: TImage;
+    Img_Split01: TImage;
+    Lbl_CurrMode: TLabel;
+    Img_Split02: TImage;
+    Lbl_Version: TLabel;
+    Button1: TButton;
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject;var Action: TCloseAction);
+    procedure Button1Click(Sender: TObject);
+  private         
+    //Private Declarations
+    Render: TxRender; //3D Renderer Class Interface
+    procedure WMGetMinMaxInfo(var Msg: TWMGetMinMaxInfo); message WM_GETMINMAXINFO;
+  public
+    //Public Declarations
+  end;
+
+////////////////////////////////////////////////////////////////////////////////
+// Global Variables Or Constants
+////////////////////////////////////////////////////////////////////////////////
+var FRM_XGUI: TFRM_XGUI;
+implementation
+{$R *.dfm}
+
+//------------------------------------------------------------------------------
+// Name: TFRM_XGUI.WMGetMinMaxInfo()
+// Desc:
+//------------------------------------------------------------------------------
+procedure TFRM_XGUI.WMGetMinMaxInfo(var Msg: TWMGetMinMaxInfo);
+begin
+  inherited;
+  Msg.MinMaxInfo^.ptMinTrackSize:= Point(640,480); //MinForm Size
+end; //EndWMGetMinMaxInfoProcedure
+
+//------------------------------------------------------------------------------
+// Name: TFRM_XGUI.FormCreate()
+// Desc:
+//------------------------------------------------------------------------------
+procedure TFRM_XGUI.FormCreate(Sender: TObject);
+begin
+  //Set Default Parameters
+  Render:= nil; //Null 3D Render By Default
+  //Pnl_Output.DoubleBuffered:= True;
+
+  //Create 3D Renderer Class Interface
+  Render:= TxRender.Create();
+  Render.Output:= Pnl_Output.Handle;
+  Render.Input:= Handle;
+
+  //Set Window And Screen Resolution Parameters
+  Render.Width:= 800;
+  Render.Height:= 600;
+  Render.Windowed:= True;
+
+  //Set GUI Window Size By Resolution Parameters
+  if (Render.Windowed) then begin
+  Width:= Render.Width+12;
+  Height:= Render.Height+Pnl_Status.Height+12; end;
+
+  if (not Render.Init3D) then begin
+  Pnl_Output.Caption:= 'Engine 3D Device Init Error...';
+  Lbl_CurrMode.Caption:= 'Engine Error..';
+  end else begin
+  if (not Render.Windowed) then Render.UseCamera:= True;
+  Lbl_CurrMode.Caption:= 'Interactive mode..'; end;
+end; //EndFormCreateProcedure
+
+//------------------------------------------------------------------------------
+// Name: TFRM_XGUI.FormClose()
+// Desc:
+//------------------------------------------------------------------------------
+procedure TFRM_XGUI.FormClose(Sender: TObject;var Action: TCloseAction);
+begin
+  //Release 3D Renderer Class Interface
+  if (Render <> nil) then begin
+  Render.Release();
+  Render.Free();
+  Render:= nil; end;
+
+end; //EndFormCloseProcedure
+
+procedure TFRM_XGUI.Button1Click(Sender: TObject);
+begin
+  Render.UseCamera:= True;
+end;
+
+end.
